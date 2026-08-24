@@ -1,0 +1,30 @@
+[project]
+name = "aster-row-rag"
+version = "0.1.0"
+description = "RAG subsystem for Aster & Row Support Agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "rank-bm25>=0.2.2",
+    "faiss-cpu>=1.7.4",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.4.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

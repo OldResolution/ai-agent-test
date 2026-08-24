@@ -1,0 +1,6 @@
+{
+  "created_at": "2026-08-24T14:36:27.282390+00:00",
+  "chunk_count": 53,
+  "dimension": 384,
+  "provider_type": "DeterministicEmbeddingProvider"
+}
