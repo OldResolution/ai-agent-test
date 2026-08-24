@@ -12,6 +12,7 @@ dependencies = [
     "openai>=1.0.0",
     "python-dotenv>=1.0.0",
     "numpy>=1.24.0",
+    "ollama>=0.2.0",
 ]
 
 [project.optional-dependencies]
@@ -28,3 +29,6 @@ pythonpath = ["."]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
